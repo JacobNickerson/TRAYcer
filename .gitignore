@@ -2,4 +2,8 @@
 !.gitignore
 !color.h
 !vec3.h
-!hello_world
+!main.cpp
+!hittable.h
+!ray.h
+!sphere.h
+!hittable_list.h
