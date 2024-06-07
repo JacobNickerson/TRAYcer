@@ -26,9 +26,11 @@ int main() {
 
     // World
     hittable_list world;
-    world.add(make_shared<sphere>(point3(0,0,-1), 0.5));
-    world.add(make_shared<sphere>(point3(0,-100.5,-1), 100));
-    
+    world.add(make_shared<sphere>(point3(1,0,-1), 0.5));
+    world.add(make_shared<sphere>(point3(0,0,-5), 1));
+    world.add(make_shared<sphere>(point3(0,0,-3), 0.5));
+    world.add(make_shared<sphere>(point3(0,2,-3), 0.75));
+
     // Camera
     auto focal_length = 1.0;
     auto viewport_height = 2.0;
