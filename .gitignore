@@ -8,3 +8,4 @@
 !sphere.h
 !hittable_list.h
 !rtweekend.h
+!Makefile
