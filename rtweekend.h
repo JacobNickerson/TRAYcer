@@ -20,6 +20,7 @@ inline double degrees_to_radians(double degrees) {
 #include "color.h"
 #include "ray.h"
 #include "vec3.h"
+#include "interval.h"
 
 // CPP std Usings
 using std::make_shared;
