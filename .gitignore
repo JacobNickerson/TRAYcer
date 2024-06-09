@@ -1,11 +1,4 @@
-*
-!.gitignore
-!color.h
-!vec3.h
-!main.cpp
-!hittable.h
-!ray.h
-!sphere.h
-!hittable_list.h
-!rtweekend.h
-!Makefile
+.vscode/
+build/
+main.obj
+vc140.pdb
