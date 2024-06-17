@@ -35,6 +35,7 @@ inline double random_double(double min, double max) {  // Returns a random real 
 #include "interval.h"
 
 // CPP std Usings
+using std::fabs;
 using std::make_shared;
 using std::shared_ptr;
 using std::sqrt;
