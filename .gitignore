@@ -2,3 +2,4 @@
 build/
 main.obj
 vc140.pdb
+!build/images/README.md

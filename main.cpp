@@ -1,10 +1,7 @@
 #include "rtweekend.h"
-#include "camera.h"
-#include "hittable.h"
-#include "hittable_list.h"
-#include "material.h"
-#include "sphere.h"
-
+#include "camera.hpp"
+#include "hittable_list.hpp"
+#include "sphere.hpp"
 
 int main() {
     // World
@@ -21,7 +18,7 @@ int main() {
     world.add(make_shared<sphere>(point3( 1.5,    0.0, -1.0),   0.5, material_right));
 
     // Camera
-    camera cam;
+    Camera cam;
     cam.aspect_ratio = 16.0/9.0;
     cam.image_width = 1440;
     cam.max_depth = 50;
