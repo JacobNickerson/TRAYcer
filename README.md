@@ -174,7 +174,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Unlicense. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +211,7 @@ Project Link: [https://github.com/JacobNickerson/TRAYcer](https://github.com/Jac
 [issues-shield]: https://img.shields.io/github/issues/JacobNickerson/TRAYcer.svg?style=for-the-badge
 [issues-url]: https://github.com/JacobNickerson/TRAYcer/issues
 [license-shield]: https://img.shields.io/github/license/JacobNickerson/TRAYcer.svg?style=for-the-badge
-[license-url]: https://github.com/JacobNickerson/TRAYcer/blob/master/LICENSE.txt
+[license-url]: https://github.com/JacobNickerson/TRAYcer/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jacobnickerson817
 [product-screenshot]: images/screenshot.png
