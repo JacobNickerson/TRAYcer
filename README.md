@@ -8,16 +8,10 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/JacobNickerson/TRAYcer">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">TRAYcer</h3>
 
   <p align="center">
-    A raytracing scene renderer with colored, ray-traced lighting. Based on Ray Tracing in One Weekend (see acknowledgements for citation), TRAYcer features spherical objects, three different materials, a positionable camera, antialiasing, and defocus blurring (also known as depth of field).
+    A raytracing scene renderer with colored, ray-traced lighting. Based on <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in One Weekend</a> (see acknowledgements for citation); TRAYcer features spherical objects, three different materials, a positionable camera, antialiasing, and defocus blurring (also known as depth of field).
     <br />
     <a href="https://github.com/JacobNickerson/TRAYcer"><strong>Explore the docs »</strong></a>
     <br />
