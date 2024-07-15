@@ -20,7 +20,7 @@ class Camera {
 
         void initialize();
 
-        color ray_color(const ray& r, int depth, const hittable& world) const;
+        Color ray_color(const ray& r, int depth, const hittable& world) const;
         
     public:
         double aspect_ratio = 1;

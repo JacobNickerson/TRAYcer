@@ -4,6 +4,6 @@
 #include "vec3.hpp"
 #include "interval.hpp"
 
-using color = vec3;
+using Color = vec3;
 
 #endif

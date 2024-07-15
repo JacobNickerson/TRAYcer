@@ -1,6 +1,6 @@
 #include "color_functions.hpp"
 
-void write_color(std::ostream& out, const color& pixel_color) {
+void write_color(std::ostream& out, const Color& pixel_color) {
     auto r = linear_to_gamma(pixel_color.x());
     auto g = linear_to_gamma(pixel_color.y());
     auto b = linear_to_gamma(pixel_color.z());

@@ -26,25 +26,25 @@ void Camera::initialize() {
     pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
 }
 
-color Camera::ray_color(const ray& r, int depth, const hittable& world) const {
+Color Camera::ray_color(const ray& r, int depth, const hittable& world) const {
     if (depth <= 0) { // prevent recursion from exceeding stack
-        return color(0,0,0);
+        return Color(0,0,0);
     }
     hit_record rec;
     if (world.hit(r, interval(0.001, infinity), rec)) {  // we use 0.001 to avoid errors introduced by floating point rounding
         ray scattered;
-        color attenuation;
+        Color attenuation;
         if (rec.mat->scatter(r, rec, attenuation, scattered)) {
             return attenuation * ray_color(scattered, depth-1, world);
         }
-        return color(0,0,0);
+        return Color(0,0,0);
     }
 
     vec3 unit_direction = unit_vector(r.direction());
     auto a = 0.5*(unit_direction.y() + 1.0);
     // linear interpolation takes form (1-a) * startvalue + a*endvalue
     // this is a linear scale for color where in this case 0 = white, 1 = blue, 0.5 = blend
-    return (1.0 - a) * color(1,1,1) + a*color(0.5,0.7,1);
+    return (1.0 - a) * Color(1,1,1) + a*Color(0.5,0.7,1);
 }
 
 void Camera::render(const hittable& world) {
@@ -55,7 +55,7 @@ void Camera::render(const hittable& world) {
     for (int j = 0; j < image_height; j++) {
         std::clog << "\rScanlines remaining: " << (image_height-j) << ' ' << std::flush;
         for (int i = 0; i < image_width; i++) {
-            color pixel_color(0,0,0);
+            Color pixel_color(0,0,0);
             for (int sample = 0; sample < samples_per_pixel; sample++) {
                 ray r = get_ray(i, j);
                 pixel_color += ray_color(r, max_depth, world);
