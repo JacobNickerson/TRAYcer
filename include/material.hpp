@@ -46,6 +46,9 @@ class Dielectric : public Material {
 
     private:
         double refraction_index;
+
+        // Approximated using the Schlick Approximation
+        static double reflectance(double cosine, double refraction_index);
 };
 
 #endif
